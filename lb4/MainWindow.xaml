@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lb4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="База данных" Height="450" Width="600">
+    <Grid Margin="0,0,0,0">
+        <Button x:Name="add" Content="Добавление" HorizontalAlignment="Left" Margin="50,60,0,0" VerticalAlignment="Top" Width="111" Click="add_Click"/>
+        <Button x:Name="rd" Content="Чтение" HorizontalAlignment="Left" Margin="50,141,0,0" VerticalAlignment="Top" Width="111" Click="rd_Click"/>
+        <Button x:Name="cg" Content="Редактирование" HorizontalAlignment="Left" Margin="49,221,0,0" VerticalAlignment="Top" Width="112" Click="cg_Click"/>
+        <Button x:Name="del" Content="Удаление" HorizontalAlignment="Left" Margin="50,300,0,0" VerticalAlignment="Top" Width="111" Click="del_Click"/>
+        <DataGrid x:Name="data" HorizontalAlignment="Left" Height="260" Margin="242,60,0,0" VerticalAlignment="Top" Width="249">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding nb_field}" ClipboardContentBinding="{x:Null}" Header="Номер"/>
+                <DataGridTextColumn Binding="{Binding fio_field}" ClipboardContentBinding="{x:Null}" Header="ФИО"/>
+                <DataGridTextColumn Binding="{Binding ph_field}" ClipboardContentBinding="{x:Null}" Header="Оценка по Ф"/>
+                <DataGridTextColumn Binding="{Binding mt_field}" ClipboardContentBinding="{x:Null}" Header="Оценка по М"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
