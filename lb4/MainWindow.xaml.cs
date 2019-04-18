@@ -79,7 +79,16 @@ namespace lb4
 
         private void del_Click(object sender, RoutedEventArgs e)
         {
-
+            if (data.SelectedIndex > -1)
+            {
+                data.Items.RemoveAt(data.SelectedIndex);
+                //string sql = "DELETE FROM test_table WHERE data.SelectedIndex";
+                //SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            }
+            else
+            {
+                MessageBox.Show("Список пуст!");
+            }
         }
     }
 }
