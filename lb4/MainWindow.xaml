@@ -11,7 +11,7 @@
         <Button x:Name="rd" Content="Чтение" HorizontalAlignment="Left" Margin="50,141,0,0" VerticalAlignment="Top" Width="111" Click="rd_Click"/>
         <Button x:Name="cg" Content="Редактирование" HorizontalAlignment="Left" Margin="49,221,0,0" VerticalAlignment="Top" Width="112" Click="cg_Click"/>
         <Button x:Name="del" Content="Удаление" HorizontalAlignment="Left" Margin="50,300,0,0" VerticalAlignment="Top" Width="111" Click="del_Click"/>
-        <DataGrid x:Name="data" HorizontalAlignment="Left" Height="260" Margin="242,60,0,0" VerticalAlignment="Top" Width="249">
+        <DataGrid x:Name="data" HorizontalAlignment="Left" Height="260" Margin="205,60,0,0" VerticalAlignment="Top" Width="367">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding nb_field}" ClipboardContentBinding="{x:Null}" Header="Номер"/>
                 <DataGridTextColumn Binding="{Binding fio_field}" ClipboardContentBinding="{x:Null}" Header="ФИО"/>

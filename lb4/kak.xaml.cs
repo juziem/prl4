@@ -25,7 +25,17 @@ namespace lb4
 
         }
 
-        private void add_Click(object sender, RoutedEventArgs e)
+        public kak(string nb, string fio, string ph, string mt)
+        {
+            InitializeComponent();
+
+            this.nb.Text = nb;
+            this.fio.Text = fio;
+            this.ph.Text = ph;
+            this.mt.Text = mt;
+        }
+
+            private void add_Click(object sender, RoutedEventArgs e)
             {
                 this.DialogResult = true;
 
